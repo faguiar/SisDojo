@@ -14,7 +14,7 @@ public class ProfessorController {
 
     @RequestMapping("/professorList")
     public String getProfessor(Model model){
-        model.addAttribute("professorList", this.professorService.findAll());
+        model.addAttribute("professorList", this.professorService.findAllProfessores());
         return "professorList";
     }
 }
